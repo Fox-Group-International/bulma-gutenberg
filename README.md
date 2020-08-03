@@ -16,4 +16,4 @@ To develop please run `yarn` to install required packages
 
 ### Stylelint
 
-We are following a set of stylesheet formatting rules. Please run `yarn lint:styles` before pushing to the repo
+We are following a set of stylesheet formatting rules. Please run `yarn lint:styles` before pushing to the repository.
