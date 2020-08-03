@@ -1,0 +1,22 @@
+.wp-block-group {
+  @include standardwidth;
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+
+  &__inner-container {
+    @extend .container;
+
+    padding: $column-gap * 2;
+
+    @include desktop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
