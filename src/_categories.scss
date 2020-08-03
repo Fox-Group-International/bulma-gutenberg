@@ -1,0 +1,21 @@
+.wp-block-categories {
+  &.alignwide {
+    @include alignwide;
+
+    select {
+      width: 100%;
+    }
+  }
+
+  &.alignfull {
+    @include alignfull;
+
+    select {
+      width: 100%;
+    }
+  }
+
+  &-dropdown {
+    @extend .select;
+  }
+}

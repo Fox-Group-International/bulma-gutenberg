@@ -1,0 +1,15 @@
+.wp-block-quote {
+  @include standardwidth;
+
+  &.is-style-large {
+    font-size: $size-1;
+  }
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+}

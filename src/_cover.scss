@@ -1,0 +1,53 @@
+.wp-block-cover {
+  @extend .hero, .is-large;
+
+  @include standardwidth;
+
+  background-size: cover;
+  background-color: $black;
+  position: relative;
+
+  &__inner-container {
+    @extend .hero-body;
+
+    color: $white;
+    z-index: 1;
+  }
+
+  &.has-background-dim {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: inherit;
+      opacity: 0.5;
+      z-index: 1;
+    }
+  }
+
+  $i: 10;
+
+  @while $i <= 100 {
+    &.has-background-dim-#{$i} {
+      &::before {
+        opacity: $i / 100;
+      }
+    }
+    $i: $i + 10;
+  }
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+
+  &.has-parallax {
+    background-attachment: fixed;
+  }
+}

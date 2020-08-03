@@ -1,0 +1,15 @@
+.wp-block-image {
+  &.alignwide {
+    img {
+      @include alignwide;
+    }
+  }
+
+  &.alignfull {
+    @include alignfull;
+
+    img {
+      width: 100%;
+    }
+  }
+}

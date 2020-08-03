@@ -1,0 +1,22 @@
+/**
+ * Extra Colors
+*/
+
+$pink: rgb(247, 141, 167);
+$light-green-cyan: rgb(123, 220, 181);
+$vivid-green-cyan: rgb(0, 208, 132);
+
+$gbcolors: (
+  "pale-pink": $pink,
+  "vivid-red": $red,
+  "luminous-vivid-orange": $orange,
+  "luminous-vivid-amber": $yellow,
+  "light-green-cyan": $light-green-cyan,
+  "vivid-green-cyan": $vivid-green-cyan,
+  "pale-cyan-blue": $cyan,
+  "vivid-cyan-blue": $blue,
+  "vivid-purple": $purple,
+  "very-light-gray": $grey-lighter,
+  "cyan-bluish-gray": $grey,
+  "very-dark-gray": $grey-darker
+);

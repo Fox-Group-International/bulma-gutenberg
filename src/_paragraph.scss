@@ -1,0 +1,35 @@
+p {
+  &.wp-block-subhead {
+    @extend .subtitle;
+  }
+
+  &.has-drop-cap {
+    &::first-letter {
+      font-family: $family-monospace;
+      float: left;
+      font-size: $size-1;
+      line-height: 0.9;
+      margin: 0 0.1em 0 0;
+    }
+  }
+
+  &.has-small-font-size {
+    font-size: $size-7;
+  }
+
+  &.has-regular-font-size {
+    font-size: $body-font-size;
+  }
+
+  &.has-large-font-size {
+    font-size: $size-3;
+  }
+
+  &.has-huge-font-size {
+    font-size: $size-1;
+  }
+
+  &.has-background {
+    @extend .box;
+  }
+}

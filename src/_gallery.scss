@@ -1,0 +1,70 @@
+.wp-block-gallery {
+  @include standardwidth;
+
+  .blocks-gallery-grid {
+    @extend .columns, .is-multiline;
+
+    list-style: none;
+
+    .blocks-gallery-item {
+      @extend .column;
+
+      figure {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  $i: 1;
+
+  @while $i <= 8 {
+    &.columns-#{$i} {
+      .blocks-gallery-grid {
+        .blocks-gallery-item {
+          @if $i == 5 {
+            @extend .is-one-fifth;
+          }
+
+          @else if $i == 7 {
+            flex: none;
+            width: 14.285714285714286%;
+          }
+
+          @else if $i == 8 {
+            flex: none;
+            width: 12.5%;
+          }
+
+          @else {
+            @extend .is-#{12/$i};
+          }
+        }
+      }
+    }
+    $i: $i + 1;
+  }
+
+  &.is-cropped {
+    .blocks-gallery-item {
+      figure {
+        height: 100%;
+      }
+
+      img {
+        height: 100%;
+        flex: 1;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+}

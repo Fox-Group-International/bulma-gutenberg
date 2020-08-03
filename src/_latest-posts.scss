@@ -1,0 +1,58 @@
+.wp-block-latest-posts {
+  @include standardwidth;
+
+  li {
+    list-style-type: none;
+
+    a > div {
+      display: inline;
+    }
+  }
+
+  &__post-date {
+    display: block;
+    color: $grey;
+    font-size: $size-7;
+  }
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+
+  &.is-grid {
+    @extend .columns, .is-multiline;
+
+    li {
+      @extend .column;
+    }
+
+    $i: 1;
+
+    @while $i <= 8 {
+      &.columns-#{$i} li {
+        @if $i == 5 {
+          @extend .is-one-fifth;
+        }
+
+        @else if $i == 7 {
+          flex: none;
+          width: 14.285714285714286%;
+        }
+
+        @else if $i == 8 {
+          flex: none;
+          width: 12.5%;
+        }
+
+        @else {
+          @extend .is-#{12/$i};
+        }
+      }
+      $i: $i + 1;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/**
+ * Alignment
+*/
+
+.aligncenter {
+  @extend .is-clearfix;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  @extend .is-pulled-left;
+}
+
+.alignright {
+  @extend .is-pulled-right;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #000;
+  background: #fff;
+}
+
+/**
+* Text
+*/
+
+.has-text-align-right {
+  @extend .has-text-right;
+}
+
+.has-text-align-center {
+  @extend .has-text-centered;
+}

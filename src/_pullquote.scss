@@ -1,0 +1,11 @@
+.wp-block-pullquote {
+  @include standardwidth;
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+}

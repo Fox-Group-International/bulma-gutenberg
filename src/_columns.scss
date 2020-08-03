@@ -1,0 +1,17 @@
+.wp-block-columns {
+  @include standardwidth;
+
+  @extend .columns;
+
+  .wp-block-column {
+    @extend .column;
+  }
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+}

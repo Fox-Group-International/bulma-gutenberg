@@ -1,0 +1,21 @@
+.wp-block-audio {
+  @include standardwidth;
+
+  text-align: center;
+
+  &.alignwide {
+    @include alignwide;
+  }
+
+  &.alignfull {
+    @include alignfull;
+  }
+
+  audio {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+  }
+}

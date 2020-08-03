@@ -1,0 +1,9 @@
+/**
+ * Colors
+*/
+
+@each $name, $color in $gbcolors {
+  .has-#{$name}-background-color {
+    background-color: $color;
+  }
+}
