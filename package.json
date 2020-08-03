@@ -1,6 +1,6 @@
 {
   "name": "@foxgroupinternational/bulma-gutenberg",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SCSS Package to make Gutenberg styled with Bulma classes and components",
   "main": "index.scss",
   "publishConfig": {
