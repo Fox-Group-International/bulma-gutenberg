@@ -5,6 +5,18 @@
 
   .wp-block-column {
     @extend .column;
+
+    &.is-vertically-aligned-center {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &.is-vertically-aligned-bottom {
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &.alignwide {

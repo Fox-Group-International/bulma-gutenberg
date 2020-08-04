@@ -6,4 +6,8 @@
   .has-#{$name}-background-color {
     background-color: $color;
   }
+
+  .has-#{$name}-color {
+    color: $color;
+  }
 }
