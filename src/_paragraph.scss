@@ -30,6 +30,6 @@ p {
   }
 
   &.has-background {
-    @extend .box;
+    padding: $column-gap * 2;
   }
 }
