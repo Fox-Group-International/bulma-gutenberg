@@ -1,6 +1,14 @@
 .wp-block-columns {
   @include standardwidth;
 
+  margin-left: auto;
+  margin-right: auto;
+
+  &.is-marginless {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   @extend .columns;
 
   .wp-block-column {

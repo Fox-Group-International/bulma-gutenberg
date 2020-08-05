@@ -10,11 +10,15 @@
 }
 
 .alignleft {
-  @extend .is-pulled-left;
+  @include tablet {
+    float: left;
+  }
 }
 
 .alignright {
-  @extend .is-pulled-right;
+  @include tablet {
+    float: right;
+  }
 }
 
 .screen-reader-text {
