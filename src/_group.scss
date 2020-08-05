@@ -1,6 +1,9 @@
 .wp-block-group {
   @include standardwidth;
 
+  margin-left: auto;
+  margin-right: auto;
+
   &.alignwide {
     @include alignwide;
   }

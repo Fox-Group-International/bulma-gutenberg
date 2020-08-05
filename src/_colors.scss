@@ -8,6 +8,6 @@
   }
 
   .has-#{$name}-color {
-    color: $color;
+    color: $color !important;
   }
 }
